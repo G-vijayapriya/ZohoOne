@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Inconsolata:wdth,wght@124.3,200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Profile card</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                overflow-x: hidden;
+                font-family: Zoho_Puvi_Regular, sans-serif;
+                height:100vh;
+                width: 100vw;
+                /* background: linear-gradient( #FFE26A , white ); */
+                /* background: linear-gradient(white 0%, white 70%, #FFE26A 70%, #FFE26A 100%); */
+
+            }
+            nav{
+                width:100%;
+                display:flex;
+                justify-content: space-between;
+                padding-bottom: 10%;
+            }
+            nav img{
+                width:18%;
+
+            }
+            p{
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+            }
+            .container{
+                width:50%;
+                padding:1% 25% 5%;
+            }
+            .card{
+                border-radius: 1rem;
+                width:90%;
+                padding:7%;
+                background-color:white;
+                box-shadow: 1px 1px 5px #FFE26A;
+            }
+            .top{
+                display: flex;
+                width:90%;
+                color:#232839;
+                padding-bottom: 2%;
+            }
+            .profile{
+                width:30%;
+            }
+            .name{
+                padding-top: 2%;
+                padding-left: 2rem;
+            }
+            .top img{
+                width:100%;
+                border-radius: 50%;
+            }
+            .top h1{
+                font-size: 1.7rem;
+            }
+            .content{
+                margin:3rem 10% 0;
+                width:70%;
+                box-shadow: 1px 1px 5px #FFE26A;
+                margin-top: 3rem;
+                padding:2% 5%;
+                color:#232839;
+                /* background-color: #232839; */
+                border-radius: 1rem;
+            }
+            ul{
+                padding: 2% 7%;
+            }
+            .content h3{
+                font-size: 1.5rem;
+            }
+            button{
+                border: 1px solid #FFE26A ;
+                border-radius: 1rem;
+                padding: 1rem 1.5rem;
+                background-color:  white ;
+                font-size: 1.1rem;
+                margin-top: 5rem;
+                transition: transform 1s ease;
+            }
+            li{
+                font-size: 1.3rem;
+                padding: 1% 0;
+            }
+            button:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+                background-color:#F7F6C2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="card">
+        <nav>
+            <img src="images1/zohoone_icon.svg">
+            <h2>HTML CSS</h2>
+        </nav>
+        
+            <div class="top">
+                <div class="profile">
+                    <img src="IMG_20250629_175014.jpg">
+                </div>
+                <div class="name">
+                    <h1>Vijaya priya</h1><br>
+                    <p>I enjoy learning new things and believe in learning through experiences and hard work.</p><br>
+                    <p>I am aspire to become a software developer</p>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Lessons learnt</h3>
+                <ul>
+                    <li>Design a page</li>
+                    <li>How to name a class and id</li>
+                    <li>Make animation and transition</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Challenges faced</h3>
+                <ul>
+                    <li>Make a responsive page</li>
+                    <li>Handling positions and alignment</li>
+                    <li>Make hide and show elements</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Gratitude</h3>
+                <ul>
+                    <li>Thank you all faculties and friends</li>
+                </ul>
+            </div>
+            <center><a href="index.html"><button>View Project</button></a></center>
+        </div>    
+        </div>
+    </body>
+</html>

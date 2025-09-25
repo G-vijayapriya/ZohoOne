@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Zoho_Puvi_Regular, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    padding:.5% 15% ;
+    background-color:white;
+    border-bottom:1px solid lightgray;
+    z-index:2;
+}
+.nav img{
+    width: 40%;
+}
+.nav ul{
+    display: flex;
+    list-style:none;
+}
+.nav li{
+    padding-left:2rem;
+}
+.nav .list p:hover{
+    background-color: lightgray;
+}
+.nav .list p{
+    margin-bottom: .5rem;
+}
+.nav .platform{
+    position: relative;
+    font-size: 0.5;
+}
+.platform .list{
+    
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+.platform:hover{
+    cursor: pointer;
+}
+.nav .platform:hover .list{
+    display: block;
+    width:13rem;
+    padding: 1rem;
+}
+.nav .sol{
+    position: relative;
+    font-size: 0.5;
+}
+.sol .list{
+    
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+.sol:hover{
+    cursor: pointer;
+}
+.nav .sol:hover .list{
+    display: block;
+    width:7rem;
+    padding: 1rem;
+}
+.list a{
+    margin-bottom:6rem ;
+}
+.container{
+    width:60%;
+    padding:5% 20%;
+    line-height: 2rem;
+}
+.container h1{
+    font-size: 3rem; 
+    padding: 1rem;  
+}
+.qus{
+    margin-top: 3rem;
+    box-shadow: 1px 1px 1px grey;
+    padding: 1rem;
+}
+summary{
+    font-size: 1.5rem;
+}
+.qus div{
+    padding:2% 5%;
+}
+summary:hover{
+    cursor: pointer;
+    color:#F1483F;
+}
+footer{
+    background-color:#262626;
+    display:flex;
+    justify-content:space-between;
+    width:70%;
+    padding:5% 15%;
+    color:white;
+    line-height:2rem;
+}
+li{
+    list-style: none;
+}
+.linkimg{
+    width:30%;
+}
+.linkimg img{
+    width:100%;
+    cursor:pointer;
+}
+.link1{
+    width:15%;
+}
+.link2{
+    width:20%;
+}
+footer ul h3{
+    font-size:1.3rem;
+    padding-bottom:1rem;
+}
+footer li{
+    opacity:.7;
+}
+footer li:hover{
+    cursor:pointer;
+}
+
+@media screen and (max-width:500px) {
+    .nav {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 95%;
+        padding: 1rem ;
+        font-size: .7rem;
+    }
+
+    .nav img {
+        width: 90%;
+    }
+    .nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav li {
+        padding-left: 1rem;
+    }
+
+    .nav .platform {
+        position: relative;
+        font-size: 0.5;
+    }
+
+    .platform .list {
+
+        position: absolute;
+        display: none;
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+    }
+    .nav .platform:hover .list {
+        display: block;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    .platform:hover .a::after {
+        content: " ▲";
+        font-size: 0rem;
+    }
+
+    .sol:hover .a::after {
+        content: " ▲";
+        font-size: 0rem;
+    }
+
+    .a::after {
+        content: " ▼";
+        font-size: 0rem;
+    }
+
+    .nav .sol {
+        position: relative;
+        font-size: 0.5;
+    }
+    .nav .sol:hover .list {
+        display: block;
+        width: 7rem;
+        padding: 1rem;
+    }
+    .list a {
+        margin-bottom: 6rem;
+    }
+    .container{
+        width:90%;
+        padding:20% 5%;
+        line-height: 2rem;
+    }
+    .qus{
+        margin-top: 2rem;
+    }
+    .container h1{
+        font-size: 2rem; 
+        padding: 1rem;  
+    }
+    summary{
+    font-size: 1.2rem;
+}
+footer {
+    width: 90%;
+    padding: 5%;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.linkimg {
+    width: 100%;
+}
+
+.linkimg img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.link1 {
+    width: 50%;
+}
+
+.link2 {
+    width: 100%;
+}
+
+footer ul h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+    
+}

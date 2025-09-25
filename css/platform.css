@@ -1,0 +1,578 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Zoho_Puvi_Regular, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: .5% 15%;
+    background-color: #FBE7B7;
+    border-bottom: 1px solid lightgray;
+    z-index: 2;
+}
+
+.nav img {
+    width: 40%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    padding-left: 2rem;
+}
+
+.nav .platform {
+    position: relative;
+    font-size: 0.5;
+}
+
+.platform .list {
+    top: 1rem;
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.platform:hover {
+    cursor: pointer;
+}
+
+.nav .platform:hover .list {
+    display: block;
+    width: 13rem;
+    padding: 1rem;
+}
+
+.nav .sol {
+    position: relative;
+    font-size: 0.5;
+}
+.nav .list p:hover{
+    background-color: lightgray;
+}
+.nav .list p{
+    margin-bottom: .5rem;
+}
+.sol .list {
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.sol:hover {
+    cursor: pointer;
+}
+
+.nav .sol:hover .list {
+    display: block;
+    /* width:7rem; */
+    padding: 1rem;
+}
+
+.list a {
+    margin-bottom: 6rem;
+}
+
+.platform:hover .a::after {
+    content: " ▲";
+    font-size: 1rem;
+}
+
+.sol:hover .a::after {
+    content: " ▲";
+    font-size: 1rem;
+}
+
+.a::after {
+    content: " ▼";
+    font-size: 1rem;
+}
+
+.heading {
+    background-color: #FBE7B7;
+    width: 70%;
+    padding: 10% 15% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading .content {
+    width: 50%;
+}
+
+.heading .image {
+    width: 30%;
+}
+
+.heading h1 {
+    font-size: 3rem;
+}
+
+.heading .para {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 2.5rem 0;
+    line-height: 2rem;
+}
+
+.content .video-player {
+    font-size: 1rem;
+    padding: 2rem 0;
+}
+
+.video-player:hover {
+    cursor: pointer;
+}
+
+.heading button {
+    color: white;
+    background-color: #E42527;
+    border-radius: .5rem;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.heading button:hover {
+    cursor: pointer;
+}
+
+.process {
+    padding: 7% 30%;
+    width: 40%;
+    text-align: center;
+}
+
+.process h2 {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.process h1 {
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.process .para {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.link {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.link p {
+    font-size: .9rem;
+    text-decoration: underline;
+    color: #166BEB;
+}
+
+.link p:hover {
+    cursor: pointer;
+}
+
+.process img {
+    width: 100%;
+}
+
+.services {
+    background-color: #D6EDFF;
+    width: 70%;
+    padding: 5% 15%;
+}
+
+.service1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.content {
+    width: 40%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.content .para1 {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+.content1 {
+    width: 40%;
+    display: flex;
+    padding-right: 5%;
+}
+
+.text p {
+    padding: 0 1rem 1rem;
+    width: 80%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.text u {
+    padding: 1rem;
+}
+
+.content1 .img {
+    width: 100%;
+}
+
+.content1 u {
+    color: #166BEA;
+}
+
+.content1 u:hover {
+    cursor: pointer;
+}
+
+.tools {
+    width: 70%;
+    padding: 5% 15%;
+
+}
+
+.tools h1 {
+    font-size: 3rem;
+    width: 50%;
+    padding-bottom: 2rem;
+    line-height: 3.5rem;
+}
+
+.tools p {
+    width: 45%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.apps {
+    width: 70%;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps .text1 {
+    width: 30%;
+}
+
+.text2 {
+    margin-bottom: 5rem;
+}
+
+.apps h1 {
+    padding-bottom: 1rem;
+}
+
+.apps p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+.apps u {
+    color: #0C7DD8;
+    font-size: 1.2rem;
+}
+
+.apps u:hover {
+    cursor: pointer;
+}
+
+.solution {
+    width: 70%;
+    padding: 2% 15% 5%;
+}
+
+.solution .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sol-item {
+    width: 12%;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: transform 1s ease;
+}
+
+.sol-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sol-item img {
+    width: 60%;
+}
+
+.sol-item h3 {
+    padding-top: 1rem;
+}
+
+.sol0 {
+    background-color: #C6EAFB;
+}
+
+.sol1 {
+    background-color: #FEC3B7;
+}
+
+.sol2 {
+    background-color: #C6F1DF;
+}
+
+.sol3 {
+    background-color: #F9CBD8;
+}
+
+.sol4 {
+    background-color: #C6F0F1;
+}
+
+.sol5 {
+    background-color: #FBE7B8;
+}
+
+footer {
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 5% 15%;
+    color: white;
+    line-height: 2rem;
+}
+
+.linkimg {
+    width: 30%;
+}
+
+.linkimg img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.link1 {
+    width: 15%;
+}
+
+.link2 {
+    width: 20%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+footer li {
+    opacity: .7;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .nav {
+        width: 90%;
+        padding: 5%;
+        font-size: .7rem;
+    }
+
+    .nav img {
+        width: 90%;
+    }
+
+    .nav li {
+        padding-left: .6rem;
+    }
+
+    .platform:hover .a::after {
+        content: " ▲";
+        font-size: 0rem;
+    }
+
+    .sol:hover .a::after {
+        content: " ▲";
+        font-size: 0rem;
+    }
+
+    .a::after {
+        content: " ▼";
+        font-size: 0rem;
+    }
+
+    .heading {
+        width: 90%;
+        text-align: center;
+        padding:20% 5% 1%;
+        flex-direction: column;
+    }
+    .heading .content {
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 2rem;
+        padding-bottom:0 ; 
+    }
+    .heading .image {
+        width: 100%;
+    }   
+    .heading .para{
+        width:100%;
+        padding: 2rem 0;
+    }
+    .heading button{
+        padding: .7rem;
+        font-size: 1rem;
+    }
+    .process{
+        width: 90%;
+        padding: 5%;
+    }
+    .process h1{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .process h2{
+        font-size: 1.5rem;
+        padding-bottom: 2.2rem;
+    }
+    .process .para{
+        width: 100%;
+    }
+    .link{
+        flex-direction: column;
+    }
+    .services{
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+    }
+    .service1{
+        width:100%;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+    .content .para1{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .content1{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .content1 .text{
+        text-align: left;
+    }
+    .image .img1{
+        width: 100%;
+    }
+    .tools{
+        width:90%;
+        padding: 5%;
+        text-align: center;
+    }
+    .tools h1 {
+        width:100%;
+        font-size:1.8rem;
+        line-height: 2.3rem;
+    }
+    .tools p{
+        width:100%;
+    }
+    .apps{
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+    }
+    .apps .text1{
+        width: 100%;
+    }
+    .apps img{
+        width: 100%;
+    }
+    .solution{
+        width: 90%;
+        padding: 5%;
+    }
+    .solution .container{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sol-item {
+        width: 50%;
+    }
+    footer {
+        width: 90%;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkimg {
+        width: 100%;
+    }
+
+    .linkimg img {
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .link1 {
+        width: 50%;
+    }
+
+    .link2 {
+        width: 100%;
+    }
+
+    footer ul h3 {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+}
